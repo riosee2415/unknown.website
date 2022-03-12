@@ -5,10 +5,17 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title WEBSITE
+        link(rel="stylesheet", href="/static/styles.css")
+
     body 
-        header HEADER
+        header.header
+            a(href="/") HOME &nbsp;&nbsp;
+            a(href="/intro") INTRO &nbsp;&nbsp;
+            a(href="/product") PRODUCT &nbsp;&nbsp;
+            a(href="/b/notice") NOTICE &nbsp;&nbsp;
+            a(href="/b/contact") CONTACT &nbsp;&nbsp;
 
         main
             block content
 
-        footer FOOTER
+        footer.footer FOOTER
