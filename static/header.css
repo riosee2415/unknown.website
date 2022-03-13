@@ -4,4 +4,25 @@
 
   border-bottom: 1px solid #d7d7d7d7;
   box-shadow: 3px 3px 10px #d7d7d7d7;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header a {
+  color: rgb(97, 97, 97);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+
+  margin: 0px 25px;
+  padding: 7px;
+
+  transition: 0.7s;
+}
+
+.header a:hover {
+  color: rgb(107, 83, 133);
 }
