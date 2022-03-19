@@ -10,6 +10,8 @@ const app = express();
 app.use(morgan("dev"));
 app.set("view engine", "pug");
 app.use("/static", express.static(path.join(__dirname, "/static")));
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
 app.use("/", globalRouter);
 app.use("/b", boardRouter);

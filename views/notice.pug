@@ -1,4 +1,13 @@
 extends ./base.pug
 
 block content
-    h1 NOTICE
+
+    form(action="/b/write" method="get").btnWrapper
+        button(type="submit").btnWrapper__w 작성하기
+
+    each p in potato
+        div.bb
+            div.bb__id #{p.id}
+            div.bb__title #{p.title}
+            div.bb__author #{p.author}
+            div.bb__createdAt #{p.createdAt}
